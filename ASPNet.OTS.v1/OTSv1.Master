@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OTSv1.master.cs" Inherits="ASPNet.OTS.v1.OTSv1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>.: Öğrenci Yönetim Sistemi v2.0 _ © 2021 UCC Software :.</title>
+
+    <%--Codes from Osman Sivrikaya - Begin--%>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <%--Codes from Osman Sivrikaya - End--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%--Burası üst taraftaki header bölümü--%>
+
+        <%--Codes from Osman Sivrikaya - Begin--%>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Default.aspx">Okul Otomasyon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="OgrenciEkle.aspx">Öğrenci Ekle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="OgrenciDuzenle.aspx">Öğrenci Düzenle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="OgrenciListele.aspx">Öğrenci Sorgulama</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br />
+        <%--Codes from Osman Sivrikaya - End--%>
+
+
+        <%--Burası esas olarak canlı bölüm--%>
+        <div>
+            <asp:ContentPlaceHolder ID="cphdContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <%--Burası her bir sayfanın altında bulunacak footer bölümü--%>
+
+        <%--Codes from Osman Sivrikaya - Begin--%>
+        <div class="footer">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="d-flex flex-column">
+                <div id="page-content">
+                    <div class="container text-center">
+                        <div class="row justify-content-center">
+                            <div class="col-md-7">
+                                <h1 class="fw-light mt-4 text-white">Sticky Footer using Flexbox</h1>
+                                <p class="lead text-white-50">Use just two Bootstrap utility classes and three custom CSS rules and you will have a flexbox enabled sticky footer for your website!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+                    <div class="container text-center">
+                        <small>OKUL OTOMASYON</small>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <%--Codes from Osman Sivrikaya - End--%>
+    </form>
+</body>
+</html>
